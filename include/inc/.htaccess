@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+
+RewriteRule ^category/([^/\.]+)/([^/\.]+)/?$ category.php?url=$1&page=$2 [L,QSA]
+RewriteRule ^category/([^/\.]+)/?$ category.php?url=$1 [L,QSA]
+
+
